@@ -1,8 +1,14 @@
 
 name := "ureact"
-version := "1.0"
+version := "0.1.0"
 scalaVersion := "2.11.8"
 organization := "com.jspha"
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+
+
+bintrayOrganization := Some("jspha")
+bintrayRepository := "maven"
+bintrayPackageLabels := Seq("react", "scalajs", "facade")
 
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 

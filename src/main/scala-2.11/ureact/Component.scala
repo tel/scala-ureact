@@ -1,7 +1,5 @@
 package ureact
 
-import ureact.internal
-
 import scala.scalajs.js
 
 @js.native

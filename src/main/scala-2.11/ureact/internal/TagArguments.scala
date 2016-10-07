@@ -61,6 +61,8 @@ object TagArguments {
 
   def update(args: TagArguments, mod: TagMod): TagArguments =
     mod match {
+      case TagMod.NoOp =>
+        args
       case TagMod.AddProp(key, value) =>
         args.copy(props = args.props + (key -> value))
       case TagMod.AddClass(name) =>
